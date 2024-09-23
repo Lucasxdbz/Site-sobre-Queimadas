@@ -1,0 +1,472 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilo para a Galeria de Imagens na Página Inicial */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Largura fixa para garantir consistência */
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste responsivo para telas menores */
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 90%; /* Ajuste para ocupar a maior parte da tela em dispositivos menores */
+    }
+}
+
+/* Estilos para a página de Consequências das Queimadas */
+
+/* Estilo geral da seção de consequências */
+.consequences {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+/* Títulos */
+.consequences h1, .consequences h2 {
+    color: #2E7D32;  /* Verde escuro */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.consequences h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+/* Estilo da descrição */
+.consequences .description {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilo para listas de impactos */
+.consequences ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilo para a seção de infográfico */
+.infographic-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.infographic-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;  /* Animação ao passar o mouse */
+}
+
+.infographic-section img:hover {
+    transform: scale(1.05);  /* Leve aumento ao passar o mouse */
+}
+
+.infographic-section p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .consequences h1, .consequences h2 {
+        font-size: 1.8em;
+    }
+
+    .infographic-section img {
+        max-width: 90%;  /* Ajusta a largura para telas menores */
+    }
+}
+
+
+/* Estilos para as Causas das Queimadas */
+.causes {
+    padding: 20px;
+}
+
+.causes h1, .causes h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.main-causes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-causes li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-causes li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.main-causes li strong {
+    color: #4CAF50;
+    margin-right: 5px;
+}
+
+.image-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #4CAF50; /* Cor verde para o menu */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Coloca os itens na horizontal */
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: white; /* Cor branca para o texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.2em; /* Tamanho da fonte ajustado */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilos para a página de Causas das Queimadas */
+
+/* Estilo geral da seção de causas */
+.causes {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+/* Títulos */
+.causes h1, .causes h2 {
+    color: #2E7D32;  /* Verde escuro para combinar com o tema ambiental */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;  /* Aumentei o tamanho do título para melhor destaque */
+}
+
+.causes h2 {
+    font-size: 1.5em;  /* Subtítulos um pouco menores */
+    margin-top: 40px;
+}
+
+/* Estilo da descrição */
+.description {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    line-height: 1.8;  /* Mais espaçamento entre linhas para legibilidade */
+    color: #333;  /* Cor mais suave para o texto */
+    max-width: 900px;
+    margin: 0 auto;  /* Centralizar o conteúdo */
+}
+
+/* Estilo da lista de causas */
+.main-causes ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;  /* Centraliza a lista */
+}
+
+.main-causes li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;  /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil para destacar os itens */
+    transition: transform 0.2s ease;  /* Animação suave ao passar o mouse */
+}
+
+.main-causes li:hover {
+    transform: translateY(-5px);  /* Efeito hover: levanta o item levemente */
+}
+
+.main-causes li img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;  /* Ícones com formato circular */
+    border: 2px solid #4CAF50;  /* Borda verde nos ícones */
+}
+
+.main-causes li strong {
+    color: #2E7D32;  /* Cor verde para destacar as palavras importantes */
+    font-size: 1.2em;
+}
+
+.main-causes li p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;  /* Cor do texto da lista */
+}
+
+/* Estilo para a seção de imagens */
+.image-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Sombra mais forte para as imagens */
+    margin-bottom: 30px;
+}
+
+.image-section h2 {
+    color: #2E7D32;  /* Subtítulo com cor temática */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .main-causes li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-causes li img {
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 1.1em;
+    }
+
+    .causes h1, .causes h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* Estilos para a página de Prevenção de Queimadas */
+
+/* Estilo geral da seção de prevenção */
+.prevention {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+/* Títulos */
+.prevention h1, .prevention h2 {
+    color: #2E7D32;  /* Verde escuro */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.prevention h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+/* Estilo da descrição */
+.prevention .description {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilo para listas */
+.prevention ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilo para links de ação */
+.action-links ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.action-links li {
+    margin-bottom: 15px;
+}
+
+.action-links a {
+    font-size: 1.2em;
+    color: #4CAF50;  /* Cor verde para os links */
+    text-decoration: none;
+    border: 2px solid #4CAF50;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.action-links a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .prevention h1, .prevention h2 {
+        font-size: 1.8em;
+    }
+}
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilo para a Galeria de Imagens */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Colunas flexíveis com mínimo de 150px */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Limitei a largura máxima */
+    border-radius: 5px;
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0
+}
